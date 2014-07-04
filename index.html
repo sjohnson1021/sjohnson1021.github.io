@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <title>Caffeinated Web Development | Home</title>
+        <script>
+            var doc = document,
+                docEl = doc.documentElement;
+            docEl.className = docEl.className.replace(/(^|\s)no-js(\s|$)/, " js ");
+        </script>
+        <link rel="stylesheet" type="text/css" href="Styles/Main.css" />
+        <link rel="icon" type="image/png" href="/images/Coffee.png" />
+        <script src="Scripts/responsive-nav.min.js" async></script>
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=" async></script>
+        <script src="Coffee_edgePreload.js" type="text/javascript" charset="utf-8" async></script>
+    </head>
+
+    <body>
+        <header>
+            <div id="head-wrap">
+                <h1 title="Caffeinated Web Development">Caffeinated Web Development
+                </h1>
+                <nav id="nav" class="nav-collapse">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Works</a>
+                        </li>
+                        <li>
+                            <a href="#">Resume</a>
+                        </li>
+                        <li>
+                            <a href="#">Links</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="outer-wrapper">
+            <div id="inner-wrapper">
+                <h2>Caffeinating the web since '07</h2>
+                <p class="Description">What you are seeing is a mobile version of the site stretched to fit your screen. Come back in a few days and see what's changed!</p>
+                <p>Right now, the main thing I am trying to accomplish with this page is to build a structure that looks clean, and readable for mobile devices. Then after that, I will expand and take advantage of the screen-real-estate available to larger screens resolutions.</p>
+                <pre class="prettyprint">
+<code>
+while(true){
+    if(Coffee.isEmpty)
+        Coffee.ReFill();
+    Coffee.Drink();
+}
+</code>
+</pre>
+                <h2>Begin Dummy Text for Formatting</h2>
+
+                <p>
+                    <strong>Pellentesque habitant morbi tristique</strong>senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+                    <em>Aenean ultricies mi vitae est.</em>Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed,
+                    <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+                    <a href="#">Donec non enim</a>in turpis pulvinar facilisis. Ut felis.</p>
+
+                <h3>Header Level 3</h3>
+
+                <ol>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                    <li>Aliquam tincidunt mauris eu risus.</li>
+                </ol>
+
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+                </blockquote>
+
+
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                    <li>Aliquam tincidunt mauris eu risus.</li>
+                </ul>
+
+                <pre class="prettyprint">
+<code>
+#header h1 a {
+    display: block;
+    width: 300px;
+    height: 80px;
+}
+</code>
+</pre>
+            </div>
+        </div>
+        <footer>
+            <div id="foot-wrap">
+                <!--
+<nav>
+<ul>
+<li><a href="#footer">Home</a></li>
+<li><a href="#footer">Works</a></li>
+<li><a href="#footer">Resume</a></li>
+<li><a href="#footer">Links</a></li>
+</ul>
+</nav>
+-->
+                <div id="Stage" class="CoffeeClass"></div>
+                <p>
+                    Original responsive design, built for mobile and expanded to full size by:
+                    <br/>
+                    <span class="description">Sean Johnson 2013</span>
+                </p>
+            </div>
+        </footer>
+        <script>
+            nav = responsiveNav(".nav-collapse", {
+                animate: true,
+                transition: 400,
+                label: "Menu",
+                insert: "after",
+                customToggle: "",
+                openPos: "fixed",
+                jsClass: "js",
+                init: function() {},
+                open: function() {},
+                close: function() {}
+            });
+        </script>
+    </body>
+</html>
