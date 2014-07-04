@@ -167,7 +167,7 @@ header h1{
     float:right;
     text-indent:-9999px;
     display:block;
-    background:url(../images/nav-toggle.gif) no-repeat center;
+    background:url(../Images/nav-toggle.gif) no-repeat center;
     position:fixed;
     top:1em;
     right:1em;
@@ -203,7 +203,7 @@ header nav ul li a:hover{
     min-height:300px;
     font-size:2em;
     padding:5px 15px;
-    background-image:url(../images/CaffeinatedWeb-TransBackgroundTexture.png);
+    background-image:url(../Images/CaffeinatedWeb-TransBackgroundTexture.png);
     background-color:rgba(255, 255, 240,1);
 }
 #outer-wrapper h2{
@@ -297,7 +297,7 @@ header h1{
 /*480px*/
 @media (min-width:30em){
     html{
-        background-image:url(../images/CaffeineTextBg.gif);
+        background-image:url(../Images/CaffeineTextBg.gif);
     }
 #outer-wrapper{
     width:85%;
