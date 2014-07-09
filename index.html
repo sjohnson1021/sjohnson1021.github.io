@@ -109,6 +109,7 @@ while(true){
             </div>
         </footer>
         <script>
+            function initNav(){
             nav = responsiveNav(".nav-collapse", {
                 animate: true,
                 transition: 400,
@@ -121,9 +122,10 @@ while(true){
                 open: function() {},
                 close: function() {}
             });
+            }
         </script>
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Press+Start+2P|Open+Sans" type="text/css"/>
-        <script src="./Scripts/responsive-nav.min.js" defer></script>
+        <script src="./Scripts/responsive-nav.min.js"  onload="initNav()" defer></script>
         <script src="//google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=" defer></script>
         <script src="./Coffee_edgePreload.js" type="text/javascript" charset="utf-8" defer></script>
     </body>
