@@ -219,14 +219,16 @@ header h1 {
     top: 0;
     left: 0;
     right: 0;
-    background: #fff;
+    background: #eee;
 /*    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 1);*/
+    transition:padding 250ms ease-in-out;
 }
 .js .nav-collapsed.closed {
     max-height: 0;
 }
 .js .nav-collapse.opened {
     max-height: auto;
+    padding-bottom: 1em;
 }
 .nav-toggle {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
