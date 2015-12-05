@@ -260,7 +260,8 @@ header h1, #outer-wrapper h2 {
     float: right;
     text-indent: -9999px;
     display: block;
-    background: url(../Images/nav-toggle.gif) no-repeat center;
+    background: url(../Images/icon-menu.svg) no-repeat center;/*Credit to Chris Coyier:https://css-tricks.com/three-line-menu-navicon/*/
+    background-size: 4em 4em;
     position: fixed;
     top: 1em;
     right: 1em;
