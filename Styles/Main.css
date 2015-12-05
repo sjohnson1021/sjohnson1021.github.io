@@ -1,5 +1,6 @@
 /*@import url(http://fonts.googleapis.com/css?family=Press+Start+2P|Open+Sans);*/
 
+
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 }
 body {
     line-height: 1;
+    
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
     display: block;
@@ -83,8 +85,9 @@ select {
 body {
     font-size: 8px;
     font-family: "Open Sans", sans-serif;
-    background: rgba(255, 240, 207, .8);
+    background: #ccc;/*lightgrey*/
     max-width: 100%;
+    min-width: 220px;
     overflow-x: auto;
 }
 strong {
@@ -106,7 +109,7 @@ pre {
     overflow-x: auto;
 }
 a {
-    color: #bd7938;
+    color: hsla(196,77%,66%,1);
     text-decoration: none;
 }
 a:hover {
@@ -156,12 +159,14 @@ ol {
 header {
     display: block;
     width: 100% height: auto;
-    ;
-    background: url("../Images/Header-Transbg.png") repeat-x;
+    min-height:36px;
+/*    background: url("../Images/Header-Transbg.png") repeat-x;*/
+    background: hsla(196, 77%, 33%,1);
     padding: 10px 0px;
     background-position: bottom;
     text-align: center;
 }
+
 /*Begin Inset text-shadow Hack Illusion*/
 
 header h1:before,
@@ -169,6 +174,10 @@ header h1:after {
     content: attr(title);
     color: rgba(255, 255, 255, .8);
     position: absolute;
+    width:auto;
+    font-size:1em;
+    width:12em;
+    display:block;
 }
 header h1:before {
     top: 1px;
@@ -186,13 +195,20 @@ header nav {} header nav ul {
 header nav ul li {} header nav ul li a {}
 /* End Header */
 
-header h1 {
-    width: 95%;
+header h1, #outer-wrapper h2 {
+    width: 12em;
     margin: 15px auto 0px auto;
     position: relative;
     font-family: "Press Start 2P", sans-serif;
     font-size: 2.25em;
     color: #000;
+}
+#outer-wrapper h2{
+    font-size:1em;
+    color:#777;
+    margin-top:-.25em;
+    margin-bottom: .25em;
+    position:static;
 }
 /*Nav Stuff*/
 
@@ -203,6 +219,7 @@ header h1 {
     max-width: 100%;
     display: block;
     list-style: none;
+    clear:both;
 }
 .nav-collapse li {
     width: 100%;
@@ -219,10 +236,11 @@ header h1 {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255,255,255,.85);
+    background:hsla(213,100%,50%,1);
     box-shadow: 3px 3px 6px rgba(0, 0, 0, .65);
     transition:padding 250ms ease-in-out;
 }
+.js .nav-collapse a {color:white;}
 .js .nav-collapsed.closed {
     max-height: 0;
 }
@@ -264,7 +282,8 @@ header nav ul li a {
     font-family: "Press Start 2P", sans-serif;
     font-size: 2em;
     /*    letter-spacing:-2px;*/
-    color: #BD7938;
+/*    color: #BD7938;*/
+    color:hsla(196,77%,66%,1);
     vertical-align: baseline;
     text-decoration: underline;
     text-shadow: 2px 1px 2px #000;
@@ -273,23 +292,25 @@ header nav ul li a {
 }
 header nav ul li a:hover {
     transition: color 200ms ease;
-    color: #fff;
+    color: hsla(196,77%,66%,1) !important;
 }
 #outer-wrapper {
-    margin: -1px auto;
+    margin: -1px auto -.75em auto;
     min-height: 300px;
     font-size: 2em;
-    padding: 5px 15px;
-    background-image: url(../Images/CaffeinatedWeb-TransBackgroundTexture.png);
-    background-color: rgba(255, 255, 240, 1);
+    padding: 5px 15px .5em 15px;
+/*    background-image: url(../Images/CaffeinatedWeb-TransBackgroundTexture.png);*/
+    background: #f9f9f9;
 }
+/*
 #outer-wrapper h2 {
     font-size: 1.75em;
-    color: #fff;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, .65);
+    color: hsla(196,77%,50%,1);
+    -webkit-text-stroke: 1px hsla(196,77%,33%,.65);
     text-shadow: 2px 2px 2px #000;
     margin: 10px;
 }
+*/
 #inner-wrapper {
     min-height: 480px;
     margin: 10px auto;
@@ -298,7 +319,7 @@ header nav ul li a:hover {
 #inner-wrapper p.Description {
     font-style: oblique;
     font-weight: 600;
-    color: #8d4421;
+    color: #777;
     margin-bottom: 30px;
 }
 #inner-wrapper ul {
@@ -308,10 +329,16 @@ header nav ul li a:hover {
 footer {
     min-height: 50px;
     width: 100%;
+/*
     background: -webkit-linear-gradient(top, rgba(58, 28, 0, .0) 0%, rgba(58, 28, 0, .2) 5%, rgba(58, 28, 0, .8) 35%, rgba(26, 12, 0, 1)100%);
     background: linear-gradient(to bottom, rgba(58, 28, 0, .0) 0%, rgba(58, 28, 0, .2) 5%, rgba(58, 28, 0, .8) 35%, rgba(26, 12, 0, 1)100%);
-    margin: 0 auto;
-    padding: 2px 0;
+*/
+    background: #333;
+    border-top:3px dashed white;
+    margin: 1em auto 0 auto;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.65);
+    padding:0;
+    box-sizing: border-box;
 }
 footer p {
     text-align: center;
@@ -344,6 +371,7 @@ footer p span.description {
 
 /* Fix 'Ghost text' jump at 395-397 px browserwidth caused by inset shadow hack */
 
+/*
 @media (min-width: 412px) and (max-width: 413px),
 (max-width: 320px) {
     header h1:before,
@@ -354,6 +382,7 @@ footer p span.description {
         color: rgba(255, 255, 255, 1);
     }
 }
+*/
 /*End graphical glitch fixing */
 
 /*Media Queries*/
@@ -365,7 +394,7 @@ footer p span.description {
 
 @media (min-width: 30em) {
     html {
-        background-image: url(../Images/CaffeineTextBg.gif);
+/*        background-image: url(../Images/CaffeineTextBg.gif);*/
     }
     #outer-wrapper {
         width: 85%;
@@ -378,6 +407,7 @@ footer p span.description {
         position: relative;
         max-height: 4.25em;
         box-shadow: none;
+        
     }
     .js .nav-collapse.closed {
         max-height: none;
@@ -385,12 +415,16 @@ footer p span.description {
     .nav-toggle {
         display: none;
     }
+    header {
+        min-height:7.5em; 
+    }
     header h1 {
         font-size: 3em;
+        clear:both;
     }
     header nav.nav-collapse {
         background: none !important;
-        height: 36px;
+/*        height: 36px;*/
         margin: 5px auto 0 auto;
         text-align: center;
         position: relative !important;
@@ -405,13 +439,25 @@ footer p span.description {
 }
 /*640px*/
 
-@media (min-width: 40em) {}
+@media (min-width: 40em) {
+    header h1{
+        font-size:3em;
+    }
+}
 /*720px*/
 
-@media (min-width: 45em) {}
+@media (min-width: 45em) {
+    header h1{
+        font-size:3.5em;
+    }
+}
 /*1080px*/
 
-@media (min-width: 67.5em) {}
+@media (min-width: 67.5em) {
+    header h1{
+        font-size:4em;
+    }
+}
 /*End Media Queries*/
 
 /*! responsive-nav.js 1.0.23 by @viljamis */
