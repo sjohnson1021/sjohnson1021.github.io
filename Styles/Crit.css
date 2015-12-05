@@ -1,7 +1,7 @@
 body { line-height: 1; font-size: 8px; font-family:sans-serif; max-width: 100%; min-width: 220px; overflow-x: auto; background: rgb(204, 204, 204); }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 header { display: block; min-height: 36px; padding: 10px 0px; text-align: center; background: 50% 100% rgb(19, 114, 149); }
-#head-wrap, #foot-wrap, #outer-wrapper { max-width: 480px; margin: 0px auto; }
+#head-wrap, #foot-wrap { max-width: 480px; margin: 0px auto; }
 header h1, #outer-wrapper h2 { width: 12em; margin: 15px auto 0px; position: relative; font-family: 'Press Start 2P', sans-serif; font-size: 2.25em; color: rgb(0, 0, 0); }
 .js .nav-collapse { max-height: 0px; position: fixed; display: block; overflow: hidden; zoom: 1; top: 0px; left: 0px; right: 0px; box-shadow: rgba(0, 0, 0, 0.65098) 3px 3px 6px; transition: padding 250ms ease-in-out; background: rgb(0, 115, 255); }
 ul, ol { max-width: 80%; margin: 0px auto; text-align: justify; }
