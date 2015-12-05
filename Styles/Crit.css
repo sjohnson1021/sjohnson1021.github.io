@@ -9,7 +9,7 @@ nav ul { list-style: none; }
 a { margin: 0px; padding: 0px; font-size: 100%; vertical-align: baseline; background: transparent; color: rgb(101, 200, 235); text-decoration: none; }
 header nav ul li a { font-family: 'Press Start 2P', sans-serif; font-size: 2em; color: rgb(101, 200, 235); vertical-align: baseline; text-decoration: underline; text-shadow: rgb(0, 0, 0) 2px 1px 2px; transition: color 600ms ease; margin: 0px 0.25em; }
 .js .nav-collapse a { color: white; }
-.nav-toggle { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-user-select: none; width: 5em; height: 5em; float: right; text-indent: -9999px; display: block; position: fixed; top: 1em; right: 1em; opacity: 0.25; transition: opacity 400ms ease; background: url(http://sjohnson1021.github.io/Images/nav-toggle.gif) 50% 50% no-repeat; }
+.nav-toggle { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-user-select: none; width: 5em; height: 5em; float: right; text-indent: -9999px; display: block; position: fixed; top: 1em; right: 1em; opacity: 0.25; transition: opacity 400ms ease; background: url(http://sjohnson1021.github.io/Images/icon-menu.svg) 50% 50% no-repeat; }
 #outer-wrapper { margin: -1px auto -0.75em; min-height: 300px; font-size: 2em; padding: 5px 15px 0.5em; background: rgb(249, 249, 249); }
 #inner-wrapper { min-height: 480px; margin: 10px auto; text-align: center; }
 #outer-wrapper h2 { font-size: 1em; color: rgb(119, 119, 119); margin-top: -0.25em; margin-bottom: 0.25em; position: static; }

@@ -197,7 +197,7 @@ header nav ul li {} header nav ul li a {}
 
 header h1, #outer-wrapper h2 {
     width: 12em;
-    margin: 15px auto 0px auto;
+    margin: .66em auto .125em auto;
     position: relative;
     font-family: "Press Start 2P", sans-serif;
     font-size: 2.25em;
@@ -236,7 +236,7 @@ header h1, #outer-wrapper h2 {
     top: 0;
     left: 0;
     right: 0;
-    background:hsla(213,100%,50%,1);
+    background:hsla(196,77%,33%,1);
     box-shadow: 3px 3px 6px rgba(0, 0, 0, .65);
     transition:padding 250ms ease-in-out;
 }
@@ -422,6 +422,7 @@ footer p span.description {
     header h1 {
         font-size: 3em;
         clear:both;
+        padding-bottom:.25em;
     }
     header nav.nav-collapse {
         background: none !important;
