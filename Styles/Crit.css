@@ -14,4 +14,4 @@ header nav ul li a { font-family: 'Press Start 2P', sans-serif; font-size: 2em; 
 #inner-wrapper { min-height: 480px; margin: 10px auto; text-align: center; }
 #outer-wrapper h2 { font-size: 1em; color: rgb(119, 119, 119); margin-top: -0.25em; margin-bottom: 0.25em; position: static; }
 #inner-wrapper p.Description { font-style: oblique; font-weight: 600; color: rgb(119, 119, 119); margin-bottom: 30px; }
-pre { display: block; color: rgb(141, 68, 33); font-size: 100%; border: 1px dashed rgb(141, 68, 33); font-style: oblique; padding: 5px; margin: 20px 5px 10px; box-shadow: rgba(0, 0, 0, 0.74902) 2px 2px 2px inset; text-align: left; max-width: 100%; overflow-x: auto; background: rgba(0, 0, 0, 0.0470588); }
+pre { display: block; color: rgb(141, 68, 33); font-size: 100%; font-style: oblique; padding:1em ; text-align: left; max-width: 100%; overflow-x: auto; background: rgba(0, 0, 0, 0.5); }
