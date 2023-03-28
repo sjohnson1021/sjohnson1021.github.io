@@ -244,7 +244,7 @@ sub,sup{
     height:100vh!important
 }
 .header{
-    z-index:1;
+    z-index:999;
     text-align:center;
     color:#fff;
     position:absolute;
@@ -482,5 +482,8 @@ sub,sup{
     max-width: 66%;
 }
 article img{
-    max-width:85%;
+    max-width:90%;
+}
+.particles-js .header .header-icons a {
+    z-index: 9999 !important;
 }
