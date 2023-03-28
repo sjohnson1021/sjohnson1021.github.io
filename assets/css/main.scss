@@ -484,3 +484,6 @@ sub,sup{
 article img{
     max-width:90%;
 }
+.particles-js .header .header-icons a {
+    z-index: 9999 !important;
+}
