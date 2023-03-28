@@ -4,6 +4,7 @@ article img{max-width:75%}
 .user-projects{
   margin: 5em auto;
   padding: 1em;
+  clear:both;
 }
 .user-projects img{
   max-height:300px;
