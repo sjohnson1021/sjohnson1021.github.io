@@ -475,8 +475,12 @@ sub,sup{
 
 .user-projects{
     clear:both;
-    margin:5em auto;
+    margin:1em auto;
     padding:1em;
+}
+.user-projects hr{
+    clear:both;
+    margin:1em 0;
 }
 .user-projects img{
     max-width: 66%;
