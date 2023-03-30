@@ -15,13 +15,17 @@ article img {
     max-width: 75%;
 }
 .user-projects {
-  margin: 5em auto;
+  margin: 1em auto;
   padding:1em;
   img {
     max-height: 300px;
     height: auto;
     border-radius: 5px;
     padding:.25em;
+  }
+  hr {
+    clear:both;
+    margin:1em 0;
   }
   h5 {
     margin: 0;
