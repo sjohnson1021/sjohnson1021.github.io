@@ -1,0 +1,707 @@
+<game name="Jikkyou Powerful Pro Yakyuu 10 Chou Ketteiban - 2003 Memorial (Japan) (JA)">
+		<id>GIOJCM</id>
+		<type>GameCube</type>
+		<region>NTSC-J</region>
+		<languages>JA</languages>
+		<locale lang="EN">
+			<title>Jikkyou Powerful Pro Yakyuu 10 Chou Ketteiban - 2003 Memorial</title>
+			<synopsis/>
+		</locale>
+		<locale lang="JA">
+			<title>実況パワフルプロ野球10超決定版2003メモリアル</title>
+			<synopsis/>
+		</locale>
+		<locale lang="KO">
+			<title>실황 파워풀 프로 야구 10 초결정판 2003 메모리얼</title>
+			<synopsis/>
+		</locale>
+		<publisher>Konami Computer Entertainment Osaka</publisher>
+		<date year="2003" month="12" day="18"/>
+		<rating type="CERO" value=""/>
+		<wi-fi players="0"/>
+		<input players="1"/>
+		<rom version="" name="Jikkyou Powerful Pro Yakyuu 10 Chou Ketteiban - 2003 Memorial (Japan) (JA).iso" size="1459978240"/>
+		<case color="000000"/>
+	</game>
+	<game name="Shonen Jump's One Piece: Pirates Carnival (USA) (EN)">
+		<id>GIPEAF</id>
+		<type>GameCube</type>
+		<region>NTSC-U</region>
+		<languages>EN</languages>
+		<locale lang="EN">
+			<title>Shonen Jump's One Piece: Pirates Carnival</title>
+			<synopsis>Different from the previous One Piece games, Pirates Carnival is a party game featuring over forty mini games. The mini games feature simple controls and promise to recreate well-known scenes from the original One Piece body of work. The game features support for four players, with some games featuring split screen play and others placing all four players in the same area.</synopsis>
+		</locale>
+		<locale lang="PT">
+			<title>Shonen Jump's One Piece: Pirates Carnival</title>
+			<synopsis>Diferente dos jogos One Piece anteriores, Pirates Carnival é um jogo de festa com mais de quarenta minijogos. Os minijogos apresentam controles simples e prometem recriar cenas bem conhecidas do corpo de trabalho original de One Piece. O jogo oferece suporte para quatro jogadores, com alguns jogos em tela dividida e outros colocando os quatro jogadores na mesma área.</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>소년 점프의 원피스: 해적 카니발</title>
+			<synopsis/>
+		</locale>
+		<developer>h.a.n.d. Inc.</developer>
+		<publisher>Namco Bandai Games</publisher>
+		<date year="2006" month="9" day="12"/>
+		<genre>action,party</genre>
+		<rating type="ESRB" value="E">
+			<descriptor>cartoon violence</descriptor>
+		</rating>
+		<wi-fi players="0"/>
+		<input players="4">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="Shonen Jump's One Piece: Pirates Carnival (USA) (EN) (v1.00).iso" size="1459978240" crc="83911f16" md5="844efce2d2a3f7d73793cda69b589eb9" sha1="5521c5a3306d8fca7959dedba450e95b4bd1ae7a"/>
+		<case color="000000"/>
+	</game>
+	<game name="Shonen Jump's One Piece: Pirates Carnival (Japan) (JA)">
+		<id>GIPJB2</id>
+		<type>GameCube</type>
+		<region>NTSC-J</region>
+		<languages>JA</languages>
+		<locale lang="EN">
+			<title>Shonen Jump's One Piece: Pirates Carnival</title>
+			<synopsis>Different from the previous One Piece games, Pirates Carnival is a party game featuring over forty mini games. The mini games feature simple controls and promise to recreate well-known scenes from the original One Piece body of work. The game features support for four players, with some games featuring split screen play and others placing all four players in the same area.</synopsis>
+		</locale>
+		<locale lang="JA">
+			<title>ONE PIECE パイレーツカーニバル</title>
+			<synopsis>パネルを奪い合い、自分の所得パネルを広げていくボードゲームに個性あふれるキャラクター達が大活躍するミニゲームをミックス！！
+家族や友達同士、みんなで遊べるパーティーゲーム！！
+ミニゲームには、ボスキャラ対ルフィ海賊団の１人ＶＳ３人となんとボスキャラを操作してルフィ海賊団と闘えるぞ！！その他にも長く遊べる７００問以上の早押しクイズやレースゲームなどいろいろなゲームが４０種類以上！！
+
+ルフィ海賊団はもちろん今までのライバルや最新のキャラクターまでたくさん登場！！</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>소년 점프의 원피스: 해적 카니발</title>
+			<synopsis/>
+		</locale>
+		<developer>h.a.n.d. Inc.</developer>
+		<publisher>Bandai Games</publisher>
+		<date year="2005" month="11" day="23"/>
+		<genre>action,party</genre>
+		<rating type="CERO" value=""/>
+		<wi-fi players="0"/>
+		<input players="4">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="" name="Shonen Jump's One Piece: Pirates Carnival (Japan) (JA).iso" size="1459978240"/>
+		<case color="000000"/>
+	</game>
+	<game name="The Incredibles: Rise of the Underminer (USA) (EN)">
+		<id>GIQE78</id>
+		<type>GameCube</type>
+		<region>NTSC-U</region>
+		<languages>EN</languages>
+		<locale lang="EN">
+			<title>The Incredibles: Rise of the Underminer</title>
+			<synopsis>Following The Incredibles' defeat of Syndrome in the Walt Disney Pictures presentation of the Pixar Animation Studios film, a new threat emerges beneath the ground with a diabolical plot to pollute the major cities of the world and rule over humanity from below. Fans will be able to pick up from where the film left off and relive the glory days as Mr. Incredible and Frozone, superhero best friends who team up to tackle a new villain, The Underminer.</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>인크레더블: 언더마이너의 침공</title>
+			<synopsis/>
+		</locale>
+		<developer>Heavy Iron Studios</developer>
+		<publisher>THQ</publisher>
+		<date year="2005" month="11" day="1"/>
+		<genre>action</genre>
+		<rating type="ESRB" value="E10+">
+			<descriptor>cartoon violence</descriptor>
+		</rating>
+		<wi-fi players="0"/>
+		<input players="2">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="The Incredibles: Rise of the Underminer (USA) (EN) (v1.00).iso" size="1459978240" crc="539e1ca6" md5="776efc70a57fb62e2dc77f011f870473" sha1="e9015fc11b1a33796c932eab724d77883e71d867"/>
+		<case color="000000"/>
+	</game>
+	<game name="The Incredibles: Rise of the Underminer (Japan) (JA)">
+		<id>GIQJ8P</id>
+		<type>GameCube</type>
+		<region>NTSC-J</region>
+		<languages>JA</languages>
+		<locale lang="EN">
+			<title>The Incredibles: Rise of the Underminer</title>
+			<synopsis>Following The Incredibles' defeat of Syndrome in the Walt Disney Pictures presentation of the Pixar Animation Studios film, a new threat emerges beneath the ground with a diabolical plot to pollute the major cities of the world and rule over humanity from below. Fans will be able to pick up from where the film left off and relive the glory days as Mr. Incredible and Frozone, superhero best friends who team up to tackle a new villain, The Underminer.</synopsis>
+		</locale>
+		<locale lang="JA">
+			<title>Mr.インクレディブル～強敵アンダーマイナー登場～</title>
+			<synopsis>平和のために立ち向かう、Mr.インクレディブルとフロゾン2人を操作しよう！
+Mr.インクレディブルと相棒のフロゾンを切り替えて、それぞれキャラクターの特性を生かし、アンダーマイナーの野望を打ち砕こう！！
+協力プレイによるスーパーアクション！1人でも友達と2人でも楽しめる。
+経験値を獲得してパワーアップ！より強いスーパー・ヒーローに。</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>인크레더블: 강적 언더마이너의 등장</title>
+			<synopsis/>
+		</locale>
+		<developer>Heavy Iron Studios</developer>
+		<publisher>Sega</publisher>
+		<date year="2006" month="2" day="9"/>
+		<genre>action</genre>
+		<rating type="CERO" value=""/>
+		<wi-fi players="0"/>
+		<input players="2">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="" name="The Incredibles: Rise of the Underminer (Japan) (JA).iso" size="1459978240"/>
+		<case color="000000"/>
+	</game>
+	<game name="The Incredibles: Rise of the Underminer (Europe) (EN,FR)">
+		<id>GIQX78</id>
+		<type>GameCube</type>
+		<region>PAL</region>
+		<languages>EN,FR</languages>
+		<locale lang="EN">
+			<title>The Incredibles: Rise of the Underminer</title>
+			<synopsis>Following The Incredibles' defeat of Syndrome in the Walt Disney Pictures presentation of the Pixar Animation Studios film, a new threat emerges beneath the ground with a diabolical plot to pollute the major cities of the world and rule over humanity from below. Fans will be able to pick up from where the film left off and relive the glory days as Mr. Incredible and Frozone, superhero best friends who team up to tackle a new villain, The Underminer.</synopsis>
+		</locale>
+		<locale lang="FR">
+			<title>Les Indestructibles: La Terrible Attaque du Démolisseur</title>
+			<synopsis/>
+		</locale>
+		<locale lang="NL">
+			<title>The Incredibles: De opkomst van De Ondermijner</title>
+			<synopsis/>
+		</locale>
+		<locale lang="KO">
+			<title>인크레더블: 언더마이너의 침공</title>
+			<synopsis/>
+		</locale>
+		<developer>Heavy Iron Studios</developer>
+		<publisher>THQ</publisher>
+		<date year="2005" month="11" day="18"/>
+		<genre>action</genre>
+		<rating type="PEGI" value="7">
+			<descriptor>violence</descriptor>
+		</rating>
+		<wi-fi players="0"/>
+		<input players="2">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="The Incredibles: Rise of the Underminer (Europe) (EN,FR) (v1.00).iso" size="1459978240" crc="66c57057" md5="c54ce84a91f3bbed61e56204fdc87e1f" sha1="5e4f0f9690aa5ac3d53ecc47614f7ae718e040ea"/>
+		<case color="000000" versions="3"/>
+	</game>
+	<game name="The Incredibles: Rise of the Underminer (Europe) (FR,DE)">
+		<id>GIQY78</id>
+		<type>GameCube</type>
+		<region>PAL</region>
+		<languages>FR,DE</languages>
+		<locale lang="EN">
+			<title>The Incredibles: Rise of the Underminer</title>
+			<synopsis>Following The Incredibles' defeat of Syndrome in the Walt Disney Pictures presentation of the Pixar Animation Studios film, a new threat emerges beneath the ground with a diabolical plot to pollute the major cities of the world and rule over humanity from below. Fans will be able to pick up from where the film left off and relive the glory days as Mr. Incredible and Frozone, superhero best friends who team up to tackle a new villain, The Underminer.</synopsis>
+		</locale>
+		<locale lang="DE">
+			<title>Die Unglaublichen: Der Angriff des Tunnelgräbers</title>
+			<synopsis>Unglaublich: die Geschichte der Incredibles geht weiter! Freuen Sie sich auf ein Wiedersehen mit den Helden aus dem preisgekrönten Disney/Pixar Blockbuster &quot;Die Unglaublichen&quot;. In dem Videospiel &quot;Die Unglaublichen: Der Angriff des Tunnelgräbers&quot; erfahren Sie exklusiv, wie die Geschichte im Anschluss an den Kinofilm weitergeht.
+
+Sie erinnern sich bestimmt: aus den Tiefen der Erde wühlte sich der geheimnisvolle Tunnelgräber an die Oberfläche, um die Menschen in Angst und Schrecken zu versetzen. Mr. Incredible und Frozone konnten ihn zwar erst mal stoppen, aber ihr Sieg war nur von kurzer Dauer... Denn der Tunnelgräber schmiedet schon einen neuen, noch viel schrecklicheren Plan: alle Städte auf der Welt will er in sein unterirdisches Reich stürzen lassen, um sie so unter seine Herrschaft zu bringen! Klar, dass Mr. Incredible und Frozone da nicht bloß zuschauen können. Schlüpfen Sie in die Rolle der Superhelden - erstmals können Sie dabei auch Frozone mit seinen einmaligen Superkräften steuern! Zusammen begeben sich die beiden in die geheimnisvolle Welt des gefürchteten Tunnelgräbers, um dessen Roboter-Armee zu stoppen und seine verrückten Pläne zu vereiteln. Hilfe bieten dabei bekannte Stars aus dem Kinofilm. Natürlich können Sie auch die charakterspezifischen Moves und Fähigkeiten anwenden, die im Spielverlauf immer mächtiger werden. Und da Mr. Incredible und Frozone als Team unterwegs sind, können Sie während des Spiels jederzeit zwischen beiden wechseln. Nur in diesem Spiel wird sich zeigen, ob die Superhelden ihre Welt einmal mehr vor dem Bösen beschützen können ...
+
+FEATURES:
+
+* Brandneues Action-Adventure, das auf der Welt und den Charakteren aus dem Kinofilm &quot;Die Unglaublichen&quot; basiert
+
+* Kooperatives Gameplay: Wahlmöglichkeit zwischen Mr. Incredible oder Frozone zu jeder Zeit im Spielgeschehen
+
+* Spezielle Moves und Fähigkeiten des Charakters können im Spielverlauf verbessert und erweitert werden
+
+* Direkte und exklusive Weiterführung der Geschichte im Anschluss an den Film</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>인크레더블: 언더마이너의 침공</title>
+			<synopsis/>
+		</locale>
+		<developer>Heavy Iron Studios</developer>
+		<publisher>THQ</publisher>
+		<date year="2005" month="11" day="18"/>
+		<genre>action</genre>
+		<rating type="PEGI" value="7">
+			<descriptor>violence</descriptor>
+		</rating>
+		<wi-fi players="0"/>
+		<input players="2">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="The Incredibles: Rise of the Underminer (Europe) (FR,DE) (v1.00).iso" size="1459978240" crc="f1faffb9" md5="9d35107bd340e65a047df0635e7e730b" sha1="77eebc4066f40628af9bcf5302fbcefa19638c4c"/>
+		<case color="000000"/>
+	</game>
+	<game name="Second Sight (USA) (EN)">
+		<id>GISE36</id>
+		<type>GameCube</type>
+		<region>NTSC-U</region>
+		<languages>EN</languages>
+		<locale lang="EN">
+			<title>Second Sight</title>
+			<synopsis>Second Sight casts players in the role of John Vattic, an amnesiac who's nonetheless endowed with awesome mental abilities. How he's acquired those abilities and what Vattic has to do with a brutal military mission in Siberia is the onus of the story that drives Second Sight.
+Developed by Free Radical, whose previous work on TimeSplitters and previously the N64 hit GoldenEye before departing from Rare, this action/adventure game translates the team's FPS talents to a third-person game with intense shooting action the ability to harness paranormal psychic abilities.</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>투시력</title>
+			<synopsis/>
+		</locale>
+		<developer>Free Radical Design</developer>
+		<publisher>Codemasters</publisher>
+		<date year="2004" month="9" day="21"/>
+		<genre>action,adventure</genre>
+		<rating type="ESRB" value="T">
+			<descriptor>blood</descriptor>
+			<descriptor>violence</descriptor>
+			<descriptor>mild language</descriptor>
+		</rating>
+		<wi-fi players="0"/>
+		<input players="1">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="Second Sight (USA) (EN) (v1.00).iso" size="1459978240" crc="fe31f0bf" md5="9c14c0e39cdb9166999e49fc1ef44fd8" sha1="0502fc5689cc763de92f216c0e4734598489cccd"/>
+		<case color="000000"/>
+	</game>
+	<game name="Second Sight (Europe) (EN,FR,DE,ES,IT)">
+		<id>GISP36</id>
+		<type>GameCube</type>
+		<region>PAL</region>
+		<languages>EN,FR,DE,ES,IT</languages>
+		<locale lang="EN">
+			<title>Second Sight</title>
+			<synopsis>Second Sight casts players in the role of John Vattic, an amnesiac who's nonetheless endowed with awesome mental abilities. How he's acquired those abilities and what Vattic has to do with a brutal military mission in Siberia is the onus of the story that drives Second Sight.
+Developed by Free Radical, whose previous work on TimeSplitters and previously the N64 hit GoldenEye before departing from Rare, this action/adventure game translates the team's FPS talents to a third-person game with intense shooting action the ability to harness paranormal psychic abilities.</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>투시력</title>
+			<synopsis/>
+		</locale>
+		<developer>Free Radical Design</developer>
+		<publisher>Codemasters</publisher>
+		<date year="2004" month="9" day="1"/>
+		<genre>action,adventure</genre>
+		<rating type="PEGI" value="16">
+			<descriptor>violence</descriptor>
+		</rating>
+		<wi-fi players="0"/>
+		<input players="1">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="Second Sight (Europe) (EN,FR,DE,ES,IT) (v1.00).iso" size="1459978240" crc="224b2525" md5="c22fe0894d76d8a81a11cd75c8d7b4f9" sha1="791f26acf620f247461c66a9ab0fadb8042f012b"/>
+		<case color="000000"/>
+	</game>
+	<game name="Geist (USA) (EN)">
+		<id>GITE01</id>
+		<type>GameCube</type>
+		<region>NTSC-U</region>
+		<languages>EN</languages>
+		<locale lang="EN">
+			<title>Geist</title>
+			<synopsis>An unseen supernatural power prowls the hallways, laboratories and chambers of a shadowy corporate compound, terrorizing living beings wherever it lurks. That unseen power is YOU! Prepare for a hauntingly innovative first-person adventure with a supernatural twist! When a counterterrorism operation at the shadowy Volks Corporation goes horribly wrong, you are captured and subjected to a ghastly experiment that rips your spirit from your physical body. If you're going to have any hope of finding your own body, you must employ your hair-raising power of possession to control humans, animals and objects, using the unique abilities of each to explore the compound, solve puzzles and strike at your enemies.</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>가이스트</title>
+			<synopsis/>
+		</locale>
+		<developer>N-Space</developer>
+		<publisher>Nintendo</publisher>
+		<date year="2005" month="10" day="15"/>
+		<genre>action,shooter</genre>
+		<rating type="ESRB" value="M">
+			<descriptor>blood and gore</descriptor>
+			<descriptor>violence</descriptor>
+			<descriptor>partial nudity</descriptor>
+		</rating>
+		<wi-fi players="0"/>
+		<input players="4">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="Geist (USA) (EN) (v1.00).iso" size="1459978240" crc="2b606740" md5="e6519bc68b09b9587d2a0b62514a4f19" sha1="0ae8391712a8f3654228d58a26173aeefa17c5a3"/>
+		<case color="000000"/>
+	</game>
+	<game name="Geist (Europe) (EN,FR,DE,ES,IT)">
+		<id>GITP01</id>
+		<type>GameCube</type>
+		<region>PAL</region>
+		<languages>EN,FR,DE,ES,IT</languages>
+		<locale lang="EN">
+			<title>Geist</title>
+			<synopsis>An unseen supernatural power prowls the hallways, laboratories and chambers of a shadowy corporate compound, terrorizing living beings wherever it lurks. That unseen power is YOU! Prepare for a hauntingly innovative first-person adventure with a supernatural twist! When a counterterrorism operation at the shadowy Volks Corporation goes horribly wrong, you are captured and subjected to a ghastly experiment that rips your spirit from your physical body. If you're going to have any hope of finding your own body, you must employ your hair-raising power of possession to control humans, animals and objects, using the unique abilities of each to explore the compound, solve puzzles and strike at your enemies.</synopsis>
+		</locale>
+		<locale lang="DE">
+			<title>Geist</title>
+			<synopsis>John Raimi ist Spezialagent eines mächtigen Konzerns, der &quot;Volks Corporation&quot;. Doch bei seinem Arbeitgeber passieren merkwürdige Dinge. Kurzerhand entschließt Raimi sich, den rätselhaften Geschehnissen durch eigenhändige Nachforschungen auf den Grund zu gehen. Als er korrupte Firmengeheimnisse entdeckt und diese drohen, an die Öffentlichkeit zu gelangen, treibt ihn die &quot;Volks Corporation&quot; in die Enge: Raimi wird festgenommen und eingesperrt. Doch sein Geist ist stark. Getrennt von seinem Körper macht er sich auf die Suche nach den Schuldigen. Schattenhaft streift er über das Gelände seiner Firma, dringt unsichtbar in geheime Räume ein und bemächtigt sich der Seelen seiner Widersacher. Dazu nutzt er seine Fähigkeit der Transformation: Durch Schockmomente lähmt er seine Gegner, dringt in ihre Körper und nutzt ihr fremdes Wissen und die abgespeicherten Erinnerungen, um seine Mission erfüllen zu können. Wird es John Raimi gelingen, wieder in seinen Körper zurückzukehren und sich aus der Gefangenschaft zu befreien?
+
+FEATURES:
+
+- Innovativer First-Person-Shooter mit spannender Handlung
+
+- Ganz neues Spielerlebnis durch Scare &amp; Possess Modus
+
+- Einzigartige Möglichkeit des Perspektivenwechsels
+
+- Über 12 Charaktere mit individuellen Fähigkeiten, Waffen und Erinnerungen
+
+- Noch mehr Spuk-Spaß im Multiplayer-Modus mit bis zu 4 Spielern</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>가이스트</title>
+			<synopsis/>
+		</locale>
+		<developer>N-Space</developer>
+		<publisher>Nintendo</publisher>
+		<date year="2005" month="10" day="7"/>
+		<genre>action,shooter</genre>
+		<rating type="PEGI" value="18">
+			<descriptor>violence</descriptor>
+		</rating>
+		<wi-fi players="0"/>
+		<input players="4">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="Geist (Europe) (EN,FR,DE,ES,IT) (v1.00).iso" size="1459978240" crc="b484b0b0" md5="b05b590f098c47d2bcd185a6ea7b9b6a" sha1="04948663d224826b284c8070d1944a45b871f720"/>
+		<case color="000000" versions="2"/>
+	</game>
+	<game name="Intellivision Lives (USA) (EN)">
+		<id>GIVE4Z</id>
+		<type>GameCube</type>
+		<region>NTSC-U</region>
+		<languages>EN</languages>
+		<locale lang="EN">
+			<title>Intellivision Lives</title>
+			<synopsis>This classic collection contains more than 60 Intellivision games, history, fun facts, commercials, archival footage, and interviews. Games featured in the compilation include Armor Battle, Astrosmash, B-17 Bomber, Backgammon, Baseball, Body Slam: Super Pro Wrestling, Bomb Squad, Bowling, Boxing, Buzz Bombers, Checkers, Football, Frog Bog, Golf, Hockey, Horse Racing, Hover Force, Las Vegas Poker &amp; Blackjack, Las Vegas Roulette, Motocross, Night Stalker, Pinball, Reversi, Sea Battle, Shark! Shark!, Skiing, Snafu, Soccer, Space Armada, Space Battle, Space Hawk, Space Spartans, Spiker!: Super Pro Volleyball, Stadium Mud Buggies, Star Strike, Sub Hunt, Tennis, Thin Ice, Utopia, Vectron, and the never released Empire, Space Cadet and Number Jumble.</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>인텔리비전 라이브즈</title>
+			<synopsis/>
+		</locale>
+		<developer>Realtime Associates</developer>
+		<publisher>Crave Entertainment</publisher>
+		<date year="2004" month="11" day="2"/>
+		<genre>action,compilation</genre>
+		<rating type="ESRB" value="E">
+			<descriptor>simulated gambling</descriptor>
+		</rating>
+		<wi-fi players="0"/>
+		<input players="6">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="Intellivision Lives (USA) (EN) (v1.00).iso" size="1459978240" crc="a28bd52f" md5="9cd10fe7077012bc2acfd8dc62b1acfa" sha1="7a34b04a467fa39aca4c57752b63f3015bee9723"/>
+		<case color="000000"/>
+	</game>
+	<game name="Ty the Tasmanian Tiger 3: Night of the Quinkan (USA) (EN)">
+		<id>GIZE52</id>
+		<type>GameCube</type>
+		<region>NTSC-U</region>
+		<languages>EN</languages>
+		<locale lang="EN">
+			<title>Ty the Tasmanian Tiger 3: Night of the Quinkan</title>
+			<synopsis>TY and his mates face their biggest challenge yet - an otherworldly invasion by an ancient evil known as the Quinkan. With Bush Rescue disbanded, TY begins the challenging task of reforming his team and leading the fight against the dark oppressors. In this next chapter, players will embark on a series of engaging missions and challenges filled with new and upgradeable weapons - including his trade mark boomerang collection -- and vehicles. TY's new adventures will take him into a shadowy world full of dangerous creatures, and will see him face bigger and badder enemies.</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>타이 더 태즈메이니언 타이거 3: 퀸칸의 밤</title>
+			<synopsis/>
+		</locale>
+		<developer>Krome Studios</developer>
+		<publisher>Activision</publisher>
+		<date year="2005" month="10" day="12"/>
+		<genre>action,adventure</genre>
+		<rating type="ESRB" value="E10+">
+			<descriptor>cartoon violence</descriptor>
+		</rating>
+		<wi-fi players="0"/>
+		<input players="2">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="Ty the Tasmanian Tiger 3: Night of the Quinkan (USA) (EN) (v1.00).iso" size="1459978240" crc="0580f689" md5="96b98555222f5450579af11d89a1ce3b" sha1="34c4809c04868086d75c89ba2e1554a5163db85c"/>
+		<case color="000000"/>
+	</game>
+	<game name="Jikkyou World Soccer 2002 (Japan) (JA)">
+		<id>GJ2JCM</id>
+		<type>GameCube</type>
+		<region>NTSC-J</region>
+		<languages>JA</languages>
+		<locale lang="EN">
+			<title>Jikkyou World Soccer 2002</title>
+			<synopsis/>
+		</locale>
+		<locale lang="JA">
+			<title>実況ワールドサッカー2002</title>
+			<synopsis/>
+		</locale>
+		<locale lang="KO">
+			<title>실황 월드 사커 2002</title>
+			<synopsis/>
+		</locale>
+		<developer>Konami Computer Entertainment Osaka</developer>
+		<publisher>Konami</publisher>
+		<date year="2002" month="3" day="14"/>
+		<genre>sports,soccer</genre>
+		<rating type="CERO" value="A"/>
+		<wi-fi players="0"/>
+		<input players="1">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="" name="Jikkyou World Soccer 2002 (Japan) (JA).iso" size="1459978240"/>
+		<case color="000000"/>
+	</game>
+	<game name="International Superstar Soccer 2 (Europe) (EN,FR,DE,ES,IT)">
+		<id>GJ2PA4</id>
+		<type>GameCube</type>
+		<region>PAL</region>
+		<languages>EN,FR,DE,ES,IT</languages>
+		<locale lang="EN">
+			<title>International Superstar Soccer 2</title>
+			<synopsis>Come and be a part of Football. Feel the nerves in the tunnel and the excitement on the pitch. Immerse yourself with intuitive gameplay and realism for total footballing action.</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>인터내셔널 슈퍼스타 축구 2</title>
+			<synopsis/>
+		</locale>
+		<developer>KCEO</developer>
+		<publisher>Konami</publisher>
+		<date year="2002" month="5" day="3"/>
+		<genre>sports,football</genre>
+		<rating type="PEGI" value="3"/>
+		<wi-fi players="0"/>
+		<input players="4">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="International Superstar Soccer 2 (Europe) (EN,FR,DE,ES,IT) (v1.00).iso" size="1459978240" crc="1d4a5f3e" md5="0674708e6e2f884b3142f0b4de874b6b" sha1="afcc235775aa279471bd4885f188d91bd32e6596"/>
+		<case color="000000"/>
+	</game>
+	<game name="International Superstar Soccer 3 (Europe) (EN,FR,DE,ES,IT)">
+		<id>GJ3PA4</id>
+		<type>GameCube</type>
+		<region>PAL</region>
+		<languages>EN,FR,DE,ES,IT</languages>
+		<locale lang="EN">
+			<title>International Superstar Soccer 3</title>
+			<synopsis>Experience the all new one-on-one situations and live the game. Pull off some amazing skills that really are pure football.</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>인터내셔널 슈퍼스타 축구 3</title>
+			<synopsis/>
+		</locale>
+		<developer>KCEO</developer>
+		<publisher>Konami</publisher>
+		<date year="2003" month="5" day="30"/>
+		<genre>sports,football</genre>
+		<rating type="PEGI" value="3"/>
+		<wi-fi players="0"/>
+		<input players="4">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="International Superstar Soccer 3 (Europe) (EN,FR,DE,ES,IT) (v1.00).iso" size="1459978240" crc="9c44d6ff" md5="4a5b451f3912ee7de941e9ca49bbb6e8" sha1="2a899ce460de9c6ac18824a901874bf370176998"/>
+		<case color="000000"/>
+	</game>
+	<game name="Bomberman Jetters (USA) (EN)">
+		<id>GJBE18</id>
+		<type>GameCube</type>
+		<region>NTSC-U</region>
+		<languages>EN</languages>
+		<locale lang="EN">
+			<title>Bomberman Jetters</title>
+			<synopsis>The Hige Hige Bandits are at it again as they set out to destroy Planet Bomber by crashing an artificial world called Dark Star into it. Bomberman must destroy the four powerful engines of Dark Star before it's too late. On your new adventure, you can switch control between Bomberman and Max and develop Charaboms with special abilities that grow stronger as the Charabom evolves. Up to four players can go head-to-head in multiplayer games, including new minigames.</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>봄버맨 제타즈</title>
+			<synopsis/>
+		</locale>
+		<developer>Hudson Soft</developer>
+		<publisher>Hudson Soft</publisher>
+		<date year="2004" month="3" day="10"/>
+		<genre>action</genre>
+		<rating type="ESRB" value="E"/>
+		<wi-fi players="0"/>
+		<input players="4">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="" name="Bomberman Jetters (USA) (EN).iso" size="1459978240" crc="a1389149" md5="aa77fb6553efe3866df8dd3f83a6a1d3" sha1="1d07cdec9249c33937bffbafc24cd0a3dfd089b6"/>
+		<case color="000000"/>
+	</game>
+	<game name="Bomberman Jetters (USA) (EN)">
+		<id>GJBE5G</id>
+		<type>GameCube</type>
+		<region>NTSC-U</region>
+		<languages>EN</languages>
+		<locale lang="EN">
+			<title>Bomberman Jetters</title>
+			<synopsis>Bomberman returns to GameCube in an all-new adventure. The Hige Hige Bandits have a new, devious plan up their sleeves -- this time Bomberman's home planet, Planet Bomber, is their target. Their plan, called Project: Obliterate Planet Bomber, entails destroying Planet Bomber by crashing their Dark Star artificial comet into it. Bomberman, and MAX must destroy the four engines that propel Dark Star before it is too late. Features the ability to switch between Bomberman and MAX, create new types of bombs by fusing them with special materials, and brand new, evolving Charaboms. And it wouldn't be Bomberman if Jetters didn't feature four-player battles and multiplayer challenges.</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>봄버맨 제타즈</title>
+			<synopsis/>
+		</locale>
+		<developer>Hudson Soft</developer>
+		<publisher>Majesco Sales Inc</publisher>
+		<date year="2004" month="3" day="15"/>
+		<genre>action</genre>
+		<rating type="ESRB" value="E">
+			<descriptor>mild cartoon violence</descriptor>
+		</rating>
+		<wi-fi players="0"/>
+		<input players="4">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="Bomberman Jetters (USA) (EN) (v1.00).iso" size="1459978240" crc="a1389149" md5="aa77fb6553efe3866df8dd3f83a6a1d3" sha1="1d07cdec9249c33937bffbafc24cd0a3dfd089b6"/>
+		<case color="000000"/>
+	</game>
+	<game name="Bomberman Jetters (Japan) (EN,JA)">
+		<id>GJBJ18</id>
+		<type>GameCube</type>
+		<region>NTSC-J</region>
+		<languages>EN,JA</languages>
+		<locale lang="EN">
+			<title>Bomberman Jetters</title>
+			<synopsis>Bomberman returns to GameCube in an all-new adventure. The Hige Hige Bandits have a new, devious plan up their sleeves -- this time Bomberman's home planet, Planet Bomber, is their target. Their plan, called Project: Obliterate Planet Bomber, entails destroying Planet Bomber by crashing their Dark Star artificial comet into it. Bomberman, and MAX must destroy the four engines that propel Dark Star before it is too late. Features the ability to switch between Bomberman and MAX, create new types of bombs by fusing them with special materials, and brand new, evolving Charaboms. And it wouldn't be Bomberman if Jetters didn't feature four-player battles and multiplayer challenges.</synopsis>
+		</locale>
+		<locale lang="JA">
+			<title>ボンバーマン ジェッターズ</title>
+			<synopsis/>
+		</locale>
+		<locale lang="KO">
+			<title>봄버맨 제타즈</title>
+			<synopsis/>
+		</locale>
+		<developer>Hudson Soft</developer>
+		<publisher>Hudson Soft</publisher>
+		<date year="2002" month="12" day="19"/>
+		<genre>action</genre>
+		<rating type="CERO" value=""/>
+		<wi-fi players="0"/>
+		<input players="4">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="Bomberman Jetters (Japan) (EN,JA) (v1.00).iso" size="1459978240" crc="cd233d37" md5="af9d21fd2b0331461db9c651c003e043" sha1="ecd904a3c70877dc52336c39d714e45cffb76c6a"/>
+		<case color="000000" versions="2"/>
+	</game>
+	<game name="Samurai Jack: The Shadow of Aku (USA) (EN)">
+		<id>GJCE8P</id>
+		<type>GameCube</type>
+		<region>NTSC-U</region>
+		<languages>EN</languages>
+		<locale lang="EN">
+			<title>Samurai Jack: The Shadow of Aku</title>
+			<synopsis>Thrust into the future by the evil Aku, a lone Samurai warrior must quickly find the time portal to the past to rescue his defenseless people. Ancestors of the displaced Samurai call him Jack and help him through four enemy-filled realms with 24 interactive levels. Samurai Jack suffers various states of damage if he fails to dodge fireballs and sword strikes, but slow-motion attacks, devastating combo moves, and sushi snacks empower the hearty warrior. From a burning village to the bustling Aku City, you'll guide Jack as he blasts through doors, finds hidden pathways, and frees caged locals, bringing him ever closer to fulfilling his great destiny--the defeat of Aku once and for all.</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>사무라이 잭: 아쿠의 그림자</title>
+			<synopsis/>
+		</locale>
+		<developer>Adrenium</developer>
+		<publisher>Sega Japan</publisher>
+		<date year="2004" month="3" day="24"/>
+		<genre>action</genre>
+		<rating type="ESRB" value="T">
+			<descriptor>mild violence</descriptor>
+		</rating>
+		<wi-fi players="0"/>
+		<input players="1">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="Samurai Jack: The Shadow of Aku (USA) (EN) (v1.00).iso" size="1459978240" crc="7dac3582" md5="c2a43d76d4d8b3beeb604d74e5458a66" sha1="77df2a14e2c8b3d9973e1ba16cb4c48ec1df8c0b"/>
+		<case color="000000"/>
+	</game>
+	<game name="Samurai Jack: The Shadow of Aku (Europe) (EN,FR,DE,ES,IT)">
+		<id>GJCP8P</id>
+		<type>GameCube</type>
+		<region>PAL</region>
+		<languages>EN,FR,DE,ES,IT</languages>
+		<locale lang="EN">
+			<title>Samurai Jack: The Shadow of Aku</title>
+			<synopsis>Thrust into the future by the evil Aku, a lone Samurai warrior must quickly find the time portal to the past to rescue his defenseless people. Ancestors of the displaced Samurai call him Jack and help him through four enemy-filled realms with 24 interactive levels. Samurai Jack suffers various states of damage if he fails to dodge fireballs and sword strikes, but slow-motion attacks, devastating combo moves, and sushi snacks empower the hearty warrior. From a burning village to the bustling Aku City, you'll guide Jack as he blasts through doors, finds hidden pathways, and frees caged locals, bringing him ever closer to fulfilling his great destiny--the defeat of Aku once and for all.</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>사무라이 잭: 아쿠의 그림자</title>
+			<synopsis/>
+		</locale>
+		<developer>Amaze Entertainment</developer>
+		<publisher>Sega Japan</publisher>
+		<date year="2004" month="7" day="23"/>
+		<genre>action</genre>
+		<rating type="PEGI" value="7">
+			<descriptor>violence</descriptor>
+		</rating>
+		<wi-fi players="0"/>
+		<input players="1">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="Samurai Jack: The Shadow of Aku (Europe) (EN,FR,DE,ES,IT) (v1.00).iso" size="1459978240" crc="3ade38f4" md5="180a1e9789864dcede6a166a0cc262d6" sha1="7ba390b5e46e142b5a40648494a2fc8d785d7f15"/>
+		<case color="000000"/>
+	</game>
+	<game name="Judge Dredd: Dredd vs. Death (USA) (EN)">
+		<id>GJDE5S</id>
+		<type>GameCube</type>
+		<region>NTSC-U</region>
+		<languages>EN</languages>
+		<locale lang="EN">
+			<title>Judge Dredd: Dredd vs. Death</title>
+			<synopsis>Judge Dredd: Dredd Versus Death combines weapon management, fast-paced combat, and intense multiplayer action. Based on the comic book, the game puts you in the shoes of Judge Dredd, a no-holds-barred judge who is determined to clean up the streets of the futuristic Mega-City One. Armed with an all-purpose LawGiver that features six types of ammo, you can shoot to wound, shoot to kill, or make an arrest--all while keeping an eye on your Lawmeter. Shoot an unarmed citizen, and your Lawmeter will drop; apprehend numerous criminals, and it will rise.</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>져지 드레드: 드레드 vs. 죽음</title>
+			<synopsis/>
+		</locale>
+		<developer>Rebellion</developer>
+		<publisher>Xicat Interactive</publisher>
+		<date year="2003" month="12" day="12"/>
+		<genre>action,shooter,first-person shooter</genre>
+		<rating type="ESRB" value="M">
+			<descriptor>blood and gore</descriptor>
+			<descriptor>intense violence</descriptor>
+			<descriptor>strong language</descriptor>
+		</rating>
+		<wi-fi players="0"/>
+		<input players="4">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="Judge Dredd: Dredd vs. Death (USA) (EN) (v1.00).iso" size="1459978240" crc="19fa8d6c" md5="4b78c00906e4b782c336810166663e9a" sha1="c2ae432c60734c5961dd5b2573ff3d56d4ffac15"/>
+		<case color="000000"/>
+	</game>
+	<game name="Judge Dredd: Dredd vs. Death (Europe) (EN,DE)">
+		<id>GJDX7D</id>
+		<type>GameCube</type>
+		<region>PAL</region>
+		<languages>EN,DE</languages>
+		<locale lang="EN">
+			<title>Judge Dredd: Dredd vs. Death</title>
+			<synopsis>Judge Dredd: Dredd Versus Death combines weapon management, fast-paced combat, and intense multiplayer action. Based on the comic book, the game puts you in the shoes of Judge Dredd, a no-holds-barred judge who is determined to clean up the streets of the futuristic Mega-City One. Armed with an all-purpose LawGiver that features six types of ammo, you can shoot to wound, shoot to kill, or make an arrest--all while keeping an eye on your Lawmeter. Shoot an unarmed citizen, and your Lawmeter will drop; apprehend numerous criminals, and it will rise.</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>져지 드레드: 드레드 vs. 죽음</title>
+			<synopsis/>
+		</locale>
+		<developer>Rebellion</developer>
+		<publisher>Vivendi Universal Games</publisher>
+		<date year="2003" month="12" day="12"/>
+		<genre>action,shooter,first-person shooter</genre>
+		<rating type="PEGI" value="16">
+			<descriptor>violence</descriptor>
+		</rating>
+		<wi-fi players="0"/>
+		<input players="4">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="Judge Dredd: Dredd vs. Death (Europe) (EN,DE) (v1.00).iso" size="1459978240" crc="638f2200" md5="ac234afecae90d154ddad699c89307ce" sha1="afe249944b1790b6c47b607116d895893a90b06d"/>
+		<case color="000000"/>
+	</game>
+	<game name="Judge Dredd: Dredd vs. Death (Europe) (EN,FR)">
+		<id>GJDY7D</id>
+		<type>GameCube</type>
+		<region>PAL</region>
+		<languages>EN,FR</languages>
+		<locale lang="EN">
+			<title>Judge Dredd: Dredd vs. Death</title>
+			<synopsis>Judge Dredd: Dredd Versus Death combines weapon management, fast-paced combat, and intense multiplayer action. Based on the comic book, the game puts you in the shoes of Judge Dredd, a no-holds-barred judge who is determined to clean up the streets of the futuristic Mega-City One. Armed with an all-purpose LawGiver that features six types of ammo, you can shoot to wound, shoot to kill, or make an arrest--all while keeping an eye on your Lawmeter. Shoot an unarmed citizen, and your Lawmeter will drop; apprehend numerous criminals, and it will rise.</synopsis>
+		</locale>
+		<locale lang="KO">
+			<title>져지 드레드: 드레드 vs. 죽음</title>
+			<synopsis/>
+		</locale>
+		<developer>Rebellion</developer>
+		<publisher>Vivendi Universal Games</publisher>
+		<date year="2003" month="12" day="12"/>
+		<genre>action,shooter,first-person shooter</genre>
+		<rating type="PEGI" value="16">
+			<descriptor>violence</descriptor>
+		</rating>
+		<wi-fi players="0"/>
+		<input players="4">
+			<control type="gamecube" required="true"/>
+		</input>
+		<rom version="1.00" name="Judge Dredd: Dredd vs. Death (Europe) (EN,FR) (v1.00).iso" size="1459978240" crc="39d04d0a" md5="082fa5b1e84068f6fa256f11e60431e9" sha1="df842d2aea6b4a047917c8e2cb3b726959502a7f"/>
+		<case color="000000"/>
+	</game>
