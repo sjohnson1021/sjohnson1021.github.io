@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern PCB Progress Modal - Complete</title>
+    <style>
+        /* Progress Modal Styles */
+        .progress-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 16, 35, 0.85);
+            backdrop-filter: blur(4px);
+            z-index: 10000 !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            position:fixed;
+            will-change: transform, opacity;
+        }
+        
+        .progress-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .progress-modal {
+            background: linear-gradient(135deg, #1a2332 0%, #2d3748 100%);
+            border: 2px solid #4a5568;
+            border-radius: 16px;
+            padding: 40px;
+            min-width: 400px;
+            max-width: 500px;
+            text-align: center;
+            box-shadow:
+                0 25px 50px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+            transform: scale(0.9) translateY(20px);
+            transition: transform 0.3s ease;
+            color: white;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        .progress-overlay.active .progress-modal {
+            transform: scale(1) translateY(0);
+        }
+
+        .circuit-throbber {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 24px;
+            position: relative;
+            will-change: transform;
+            animation: circuit-pulse 2s ease-in-out infinite;
+        }
+        .circuit-board {
+            width: 100%;
+            height: 100%;
+            border: 3px solid #4CAF50;
+            border-radius: 12px;
+            position: relative;
+            background: #094D1C;
+            animation: circuit-glow 1.5s ease-in-out infinite alternate;
+            overflow: hidden; /* Hide anything that goes outside the border radius */
+            z-index: 10002;
+        }
+        .circuit-board::before{
+            content:'';
+            width:100%;
+            height:100%;
+            box-shadow: 0 0 25px 3px rgba(129, 199, 132, 1);
+            animation: shadow-pulse 1.5s ease-in-out infinite alternate;
+
+            display:block;
+            position:fixed;
+        }
+        
+        .circuit-board svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* CSS Animations */
+        @keyframes shadow-pulse{
+            0%{
+                opacity: .1;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        @keyframes circuit-glow {
+            0% { 
+                border-color: #4CAF50;
+                /*box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);*/
+            }
+            100% { 
+                border-color: #81C784;
+                /*box-shadow: 0 0 30px rgba(129, 199, 132, 0.5);*/
+            }
+        }
+
+        @keyframes circuit-pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+
+        /* Static SVG Elements */
+        .chip {
+            fill: #2d3748;
+            stroke: #4a5568;
+            stroke-width: 1.5;
+        }
+
+        .trace-path {
+            fill: none;
+            stroke: #a5e7a2;
+            stroke-width: 2;
+            stroke-opacity: 0.6;
+        }
+
+        .pad,
+        .pin {
+            fill: #ffc691;
+            fill-opacity: 0.6;
+        }
+
+        .signal {
+            fill: #38bdf8;
+            filter: url(#glow-filter);
+            opacity: 0;
+            r: 2.5;
+        }
+
+        /* Progress Bar Styles */
+        .progress-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #E2E8F0;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .progress-stage {
+            font-size: 16px;
+            color: #A0AEC0;
+            margin-bottom: 24px;
+            min-height: 20px;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #81C784, #4CAF50);
+            background-size: 200% 100%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+            animation: progress-shine 2s linear infinite;
+            min-width: 2px;
+            width: 0%;
+        }
+
+        @keyframes progress-shine {
+            0% {
+                background-position: 200% 0;
+            }
+
+            100% {
+                background-position: -200% 0;
+            }
+        }
+
+        .progress-percentage {
+            font-size: 18px;
+            font-weight: 600;
+            color: #4CAF50;
+            text-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+        }
+
+        /* Demo styles */
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: #001023;
+            color: white;
+            padding: 40px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        section.demo{
+            position: absolute;
+            z-index: 1;
+        }
+        .demo-button {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            border: none;
+            padding: 16px 32px;
+            border-radius: 8px;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+            margin: 8px;
+        }
+
+        .demo-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+        }
+
+        .demo-title {
+            font-size: 32px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .demo-description {
+            color: #A0AEC0;
+            text-align: center;
+            margin-bottom: 32px;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .demo-controls {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="demo">
+        <h1 class="demo-title">Modern PCB Progress Modal - Complete</h1>
+        <p class="demo-description">
+            Complete working version with proper Move-to handling and all required functions.
+            Eliminates SMIL flickering while preserving your original jump behavior.
+        </p>
+
+        <div class="demo-controls">
+            <button type="button" class="demo-button" onclick="simulateProgress()">
+                Start PCB Parsing Demo
+            </button>
+            <button type="button" class="demo-button" onclick="simulateHeavyWork()">
+                Test with Heavy Async Work
+            </button>
+        </div>
+    </section>
+    <!-- Progress Modal -->
+    <div id="progressOverlay" class="progress-overlay">
+        <div class="progress-modal">
+            <div class="circuit-throbber">
+                <div class="circuit-board">
+                    <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <filter id="glow-filter" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur stdDeviation="2" result="coloredBlur"></feGaussianBlur>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"></feMergeNode>
+                                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                                </feMerge>
+                            </filter>
+                        </defs>
+
+                        <!-- Chip Component -->
+                        <g id="part">
+                            <rect x="24" y="24" width="32" height="32" rx="2" class="chip"></rect>
+                            <g id="pins">
+                                <rect x="26" y="24" width="2" height="5" class="pin"></rect>
+                                <rect x="39" y="24" width="2" height="5" class="pin"></rect>
+                                <rect x="52" y="24" width="2" height="5" class="pin"></rect>
+                                <rect x="26" y="51" width="2" height="5" class="pin"></rect>
+                                <rect x="52" y="51" width="2" height="5" class="pin"></rect>
+                                <rect x="24" y="39" width="5" height="2" class="pin"></rect>
+                            </g>
+                        </g>
+
+                        <!-- Static Pads -->
+                        <circle cx="15" cy="15" r="3" class="pad"></circle>
+                        <circle cx="65" cy="15" r="3" class="pad"></circle>
+                        <circle cx="15" cy="65" r="3" class="pad"></circle>
+                        <circle cx="65" cy="70" r="3" class="pad"></circle>
+                        <circle cx="40" cy="7" r="3" class="pad"></circle>
+                        <circle cx="10" cy="40" r="3" class="pad"></circle>
+
+                        <!-- Static Traces -->
+                        <path d="M 15 15 L 27 15 L 27 24" class="trace-path"></path>
+                        <path d="M 65 15 L 53 15 L 53 24" class="trace-path"></path>
+                        <path d="M 15 65 L 27 65 L 27 56" class="trace-path"></path>
+                        <path d="M 65 70 L 53 70 L 53 56" class="trace-path"></path>
+                        <path d="M 40 7 L 40 24" class="trace-path"></path>
+                        <path d="M 10 40 L 24 40" class="trace-path"></path>
+
+                        <!-- Animated Signals (now controlled by JS) -->
+                        <circle id="btm-signal" class="signal" cx="15" cy="65" r="2.5"></circle>
+                        <circle id="tr-signal" class="signal" cx="40" cy="7" r="2.5"></circle>
+                        <circle id="tl-signal" class="signal" cx="10" cy="40" r="2.5"></circle>
+                    </svg>
+                </div>
+            </div>
+            <div class="progress-title">Parsing PCB File</div>
+            <div class="progress-stage" id="progressStage">Initializing...</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="progress-percentage" id="progressPercent">0%</div>
+        </div>
+    </div>
+
+    <script>
+        // Modern Circuit Animation Controller
+        class CircuitAnimationController {
+            constructor() {
+                this.signals = {
+                    'btm-signal': {
+                        path: 'M 15 65 L 27 65 L 27 57 M 53 55 L 53 70 L 65 70',
+                        duration: 2500,
+                        delay: 2000
+                    },
+                    'tr-signal': {
+                        path: 'M 40 7 L 40 24 M 53 24 L 53 15 L 65 15',
+                        duration: 2500,
+                        delay: 0
+                    },
+                    'tl-signal': {
+                        path: 'M 10 40 L 24 40 M 27 31 L 27 15 L 15 15',
+                        duration: 2500,
+                        delay: 0
+                    }
+                };
+
+                this.animations = [];
+                this.isRunning = false;
+            }
+
+            parsePathToSegments(pathString) {
+                const raw = pathString.trim().split(/(?=M)/);
+                const segments = [];
+              
+                raw.forEach(cmd => {
+                  const subCommands = cmd.trim().split(/(?=L)/);
+                  const points = [];
+              
+                  subCommands.forEach(sub => {
+                    const coords = sub.substring(1).trim().split(/\s+/);
+                    for (let i = 0; i < coords.length; i += 2) {
+                      points.push({
+                        x: parseFloat(coords[i]),
+                        y: parseFloat(coords[i + 1])
+                      });
+                    }
+                  });
+              
+                  if (points.length > 1) {
+                    segments.push(points);
+                  }
+                });
+              
+                return segments;
+              }
+
+            calculateSegmentLengths(segments) {
+                const segmentLengths = [];
+                let totalLength = 0;
+
+                segments.forEach(segment => {
+                    if (segment.type === 'M') {
+                        // Move-to has zero length (instant jump)
+                        segmentLengths.push(0);
+                    } else if (segment.type === 'L') {
+                        // Calculate length of line segments
+                        let segmentLength = 0;
+                        for (let i = 1; i < segment.points.length; i++) {
+                            const dx = segment.points[i].x - segment.points[i - 1].x;
+                            const dy = segment.points[i].y - segment.points[i - 1].y;
+                            segmentLength += Math.sqrt(dx * dx + dy * dy);
+                        }
+                        segmentLengths.push(segmentLength);
+                        totalLength += segmentLength;
+                    }
+                });
+
+                return { segmentLengths, totalLength };
+            }
+
+            interpolateAlongPath(segments, progress) {
+                if (progress <= 0) return segments[0].points[0];
+                if (progress >= 1) {
+                    const lastSegment = segments[segments.length - 1];
+                    return lastSegment.points[lastSegment.points.length - 1];
+                }
+
+                const { segmentLengths, totalLength } = this.calculateSegmentLengths(segments);
+                const targetDistance = totalLength * progress;
+
+                let currentDistance = 0;
+
+                for (let segIdx = 0; segIdx < segments.length; segIdx++) {
+                    const segment = segments[segIdx];
+                    const segmentLength = segmentLengths[segIdx];
+
+                    if (segment.type === 'M') {
+                        // Move-to: instant jump, no interpolation needed
+                        if (targetDistance === currentDistance) {
+                            return segment.points[0];
+                        }
+                        continue;
+                    }
+
+                    if (segment.type === 'L') {
+                        if (currentDistance + segmentLength >= targetDistance) {
+                            // We're within this line segment
+                            const segmentProgress = (targetDistance - currentDistance) / segmentLength;
+
+                            // Interpolate within the line segment points
+                            let segCurrentDistance = 0;
+                            const segTargetDistance = segmentLength * segmentProgress;
+
+                            for (let i = 1; i < segment.points.length; i++) {
+                                const start = segment.points[i - 1];
+                                const end = segment.points[i];
+                                const dx = end.x - start.x;
+                                const dy = end.y - start.y;
+                                const lineLength = Math.sqrt(dx * dx + dy * dy);
+
+                                if (segCurrentDistance + lineLength >= segTargetDistance) {
+                                    const lineProgress = (segTargetDistance - segCurrentDistance) / lineLength;
+                                    return {
+                                        x: start.x + dx * lineProgress,
+                                        y: start.y + dy * lineProgress
+                                    };
+                                }
+
+                                segCurrentDistance += lineLength;
+                            }
+                        }
+
+                        currentDistance += segmentLength;
+                    }
+                }
+
+                // Fallback to last point
+                const lastSegment = segments[segments.length - 1];
+                return lastSegment.points[lastSegment.points.length - 1];
+            }
+            createSignalAnimation(signalId, config) {
+                const element = document.getElementById(signalId);
+                if (!element) return null;
+              
+                const segments = this.parsePathToSegments(config.path);
+                let startTime = null;
+                let rafId = null;
+              
+                const step = now => {
+                  if (!this.isRunning) return;
+                  if (startTime === null) startTime = now;
+              
+                  const elapsed = now - startTime - config.delay;
+                  if (elapsed >= 0) {
+                    const cycleTime = elapsed % config.duration;
+                    const progress = cycleTime / config.duration;
+              
+                    // Determine which segment we're in
+                    const segIndex = Math.floor(progress * segments.length);
+                    const segProgress = (progress * segments.length) % 1;
+                    const seg = segments[segIndex];
+              
+                    // Interpolate position
+                    const interp = (p1, p2, t) => ({
+                      x: p1.x + (p2.x - p1.x) * t,
+                      y: p1.y + (p2.y - p1.y) * t
+                    });
+              
+                    let totalLen = seg.length - 1;
+                    let localIndex = Math.floor(segProgress * totalLen);
+                    let localT = (segProgress * totalLen) % 1;
+                    const { x, y } = interp(seg[localIndex], seg[localIndex + 1], localT);
+              
+                    element.setAttribute('cx', x);
+                    element.setAttribute('cy', y);
+              
+                    // Opacity: fade in → peak → fade out
+                    const fade = segProgress < 0.5
+                      ? segProgress * 2
+                      : (1 - segProgress) * 2;
+                    element.style.opacity = fade.toFixed(2);
+                  }
+              
+                  rafId = requestAnimationFrame(step);
+                };
+              
+                rafId = requestAnimationFrame(step);
+                return { rafId };
+              }
+
+
+              start() {
+                if (this.isRunning) return;
+                this.stop();
+                this.isRunning = true;
+                this.animations = [];
+              
+                Object.entries(this.signals).forEach(([id, config]) => {
+                  const anim = this.createSignalAnimation(id, config);
+                  if (anim) this.animations.push(anim);
+                });
+              }
+              
+              stop() {
+                this.isRunning = false;
+                this.animations.forEach(({ rafId }) => {
+                  if (rafId) cancelAnimationFrame(rafId);
+                });
+              
+                Object.entries(this.signals).forEach(([id, config]) => {
+                  const segs = this.parsePathToSegments(config.path);
+                  const start = segs[0][0];
+                  const el = document.getElementById(id);
+                  if (el) {
+                    el.setAttribute('cx', start.x);
+                    el.setAttribute('cy', start.y);
+                    el.style.opacity = '0';
+                  }
+                });
+              
+                this.animations = [];
+              }
+        }
+
+        // Progress Modal Controller
+        class ProgressModal {
+            constructor() {
+                this.overlay = document.getElementById('progressOverlay');
+                this.stageElement = document.getElementById('progressStage');
+                this.barElement = document.getElementById('progressBar');
+                this.percentElement = document.getElementById('progressPercent');
+                this.animationController = new CircuitAnimationController();
+                this.isVisible = false;
+            }
+
+            show() {
+                if (this.isVisible) return;
+
+                this.isVisible = true;
+                this.overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+
+                // Start circuit animations with extra delay to avoid conflicts
+                setTimeout(() => {
+                    if (this.isVisible) { // Double-check we're still supposed to be visible
+                        this.animationController.start();
+                    }
+                }, 150);
+            }
+
+            hide() {
+                if (!this.isVisible) return;
+
+                this.isVisible = false;
+
+                // Stop circuit animations immediately
+                this.animationController.stop();
+
+                this.overlay.classList.remove('active');
+                document.body.style.overflow = '';
+
+                // Reset progress
+                this.updateProgress(0, 'Initializing...');
+            }
+
+            updateProgress(percent, stage = '') {
+                if (!this.isVisible) return;
+
+                const clampedPercent = Math.max(0, Math.min(100, percent));
+
+                this.barElement.style.width = `${clampedPercent}%`;
+                this.percentElement.textContent = `${Math.round(clampedPercent)}%`;
+
+                if (stage) {
+                    this.stageElement.textContent = stage;
+                }
+            }
+
+            createProgressCallback() {
+                return ({ percent, stage }) => {
+                    this.updateProgress(percent, stage);
+                };
+            }
+        }
+
+        // Create global instance
+        window.progressModal = new ProgressModal();
+
+        // Demo functions
+        function simulateProgress() {
+            const modal = window.progressModal;
+            modal.show();
+
+            const stages = [
+                { percent: 0, stage: 'Initializing parser...' },
+                { percent: 5, stage: 'Applying XOR decryption...' },
+                { percent: 10, stage: 'Reading file header...' },
+                { percent: 15, stage: 'Parsing data blocks...' },
+                { percent: 30, stage: 'Processing segments...' },
+                { percent: 45, stage: 'Parsing arcs and vias...' },
+                { percent: 60, stage: 'Decrypting part data...' },
+                { percent: 75, stage: 'Processing components...' },
+                { percent: 90, stage: 'Finalizing structure...' },
+                { percent: 100, stage: 'Parsing complete!' }
+            ];
+
+            let currentStage = 0;
+            const updateInterval = setInterval(() => {
+                if (currentStage < stages.length) {
+                    const { percent, stage } = stages[currentStage];
+                    modal.updateProgress(percent, stage);
+                    currentStage++;
+                } else {
+                    clearInterval(updateInterval);
+                    //setTimeout(() => modal.hide(), 1000);
+                }
+            }, 500);
+        }
+
+        function simulateHeavyWork() {
+            const modal = window.progressModal;
+            modal.show();
+
+            // Simulate heavy async work that would block SMIL animations
+            let progress = 0;
+            const heavyWork = () => {
+                return new Promise(resolve => {
+                    // Simulate CPU-intensive work
+                    const start = Date.now();
+                    while (Date.now() - start < 200) {
+                        // Busy wait to simulate heavy processing
+                        Math.random() * Math.random();
+                    }
+                    resolve();
+                });
+            };
+
+            const processStage = async () => {
+                modal.updateProgress(progress, `Processing heavy workload: ${progress}%`);
+
+                if (progress < 100) {
+                    await heavyWork();
+                    progress += 10;
+                    // Use setTimeout to yield control back to the browser
+                    setTimeout(processStage, 0);
+                } else {
+                    modal.updateProgress(100, 'Heavy work complete!');
+                    //setTimeout(() => modal.hide(), 1000);
+                }
+            };
+
+            processStage();
+        }
+    </script>
+</body>
+
+</html>
